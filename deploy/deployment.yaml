@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name : nginx-backend-container
-          image: firebelka/nginx:v2
+          image: firebelka/nginx:v3
           resources:
             requests:
               memory: "64Mi"

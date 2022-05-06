@@ -7,3 +7,5 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 login: admin
 pwt: get from secret
 (kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo)
+## Setup
+kubectl apply -f argocd-minimal.yaml (all vars are located in argocd-vars.yaml)
