@@ -6,7 +6,7 @@ metadata:
     app : backend-deployment
 spec:
   replicas: 1
-  revisionHistoryLimit: 1 #count of saved replicaset to return by kubectl rollout deployment
+  revisionHistoryLimit: 0 #count of saved replicaset to return by kubectl rollout deployment
   selector:
     matchLabels:
       project: nginx-backend
